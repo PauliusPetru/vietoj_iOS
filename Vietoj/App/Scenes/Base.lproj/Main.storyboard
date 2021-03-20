@@ -8,21 +8,53 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--IntroVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vietoj" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroVC" customModule="Vietoj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xr-pi-dgn">
+                                <rect key="frame" x="167" y="438" width="80" height="30"/>
+                                <state key="normal" title="Registracija"/>
+                                <connections>
+                                    <segue destination="kNq-Wa-mpp" kind="show" id="8wP-9Q-uAw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3xr-pi-dgn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FCd-Zf-zaq"/>
+                            <constraint firstItem="3xr-pi-dgn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bdY-aD-e8R"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ige-Lq-PQJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="-682"/>
+            <point key="canvasLocation" x="420" y="-29"/>
+        </scene>
+        <!--Number ConfirmVC-->
+        <scene sceneID="VOe-GM-4dW">
+            <objects>
+                <viewController id="kNq-Wa-mpp" customClass="NumberConfirmVC" customModule="Vietoj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmY-sG-OTg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xEY-Qz-1KG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sVo-bv-D4q"/>
+                    <connections>
+                        <segue destination="sTO-HO-3bX" kind="show" id="yBf-E5-PYo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yr-se-cka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="-29"/>
         </scene>
         <!--ScannerVC-->
         <scene sceneID="uSq-X9-vrg">
@@ -54,7 +86,7 @@
                     <navigationItem key="navigationItem" id="J79-QH-cTY"/>
                     <connections>
                         <outlet property="scannerView" destination="x2y-XI-RXz" id="zkf-sL-6fe"/>
-                        <segue destination="aKt-F2-xrO" kind="show" identifier="ConfirmationVC" id="v3E-Us-N5w"/>
+                        <segue destination="aKt-F2-xrO" kind="presentation" identifier="ConfirmationVC" id="v3E-Us-N5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLY-RM-Fuk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,10 +115,10 @@
         <!--Navigation Controller-->
         <scene sceneID="lmA-oC-RPx">
             <objects>
-                <navigationController storyboardIdentifier="RegistrationVC" automaticallyAdjustsScrollViewInsets="NO" id="PKT-yO-lDA" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RegistrationVC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="PKT-yO-lDA" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YVL-fd-Sjp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -96,7 +128,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6M-M0-iGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-330" y="-682"/>
+            <point key="canvasLocation" x="-338" y="-29"/>
         </scene>
     </scenes>
     <resources>

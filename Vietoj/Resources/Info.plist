@@ -62,5 +62,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Need camera to scan QR code</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

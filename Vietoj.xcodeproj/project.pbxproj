@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B40C4AB8260684E4005BB10E /* NumberConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C4AB7260684E4005BB10E /* NumberConfirmVC.swift */; };
+		B40C4ABD26068526005BB10E /* NumberConfirmVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C4ABC26068526005BB10E /* NumberConfirmVM.swift */; };
+		B40C4AC226068605005BB10E /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C4AC126068605005BB10E /* LoadingButton.swift */; };
+		B40C4AC7260686C6005BB10E /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C4AC6260686C6005BB10E /* Delay.swift */; };
 		B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0A926063FBF003A7087 /* AppDelegate.swift */; };
 		B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0AB26063FBF003A7087 /* SceneDelegate.swift */; };
 		B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0AD26063FBF003A7087 /* ViewController.swift */; };
@@ -24,6 +28,9 @@
 		B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */; };
 		B4D869B52606730A007204B7 /* ScannerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869B42606730A007204B7 /* ScannerVM.swift */; };
 		B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869B92606750D007204B7 /* ConfirmationVM.swift */; };
+		B4D869BF26068163007204B7 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869BE26068163007204B7 /* IntroVC.swift */; };
+		B4D869C42606825B007204B7 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869C32606825B007204B7 /* RegistrationVC.swift */; };
+		B4D869C926068290007204B7 /* RegistrationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869C826068290007204B7 /* RegistrationVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B40C4AB7260684E4005BB10E /* NumberConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConfirmVC.swift; sourceTree = "<group>"; };
+		B40C4ABC26068526005BB10E /* NumberConfirmVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConfirmVM.swift; sourceTree = "<group>"; };
+		B40C4AC126068605005BB10E /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		B40C4AC6260686C6005BB10E /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		B435C0A626063FBF003A7087 /* Vietoj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vietoj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B435C0A926063FBF003A7087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B435C0AB26063FBF003A7087 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +78,9 @@
 		B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
 		B4D869B42606730A007204B7 /* ScannerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVM.swift; sourceTree = "<group>"; };
 		B4D869B92606750D007204B7 /* ConfirmationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVM.swift; sourceTree = "<group>"; };
+		B4D869BE26068163007204B7 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		B4D869C32606825B007204B7 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		B4D869C826068290007204B7 /* RegistrationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				B435C1162606543A003A7087 /* JSONCodable.swift */,
+				B40C4AC126068605005BB10E /* LoadingButton.swift */,
+				B40C4AC6260686C6005BB10E /* Delay.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -181,8 +197,11 @@
 				B435C12326065A46003A7087 /* ViewModels */,
 				B435C0AD26063FBF003A7087 /* ViewController.swift */,
 				B435C0AF26063FBF003A7087 /* Main.storyboard */,
+				B4D869C32606825B007204B7 /* RegistrationVC.swift */,
+				B40C4AB7260684E4005BB10E /* NumberConfirmVC.swift */,
 				B435C12426065AA8003A7087 /* ScannerVC.swift */,
 				B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */,
+				B4D869BE26068163007204B7 /* IntroVC.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -225,6 +244,8 @@
 			children = (
 				B4D869B42606730A007204B7 /* ScannerVM.swift */,
 				B4D869B92606750D007204B7 /* ConfirmationVM.swift */,
+				B40C4ABC26068526005BB10E /* NumberConfirmVM.swift */,
+				B4D869C826068290007204B7 /* RegistrationVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -403,11 +424,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B435C0F426064A81003A7087 /* UIManager.swift in Sources */,
+				B4D869C926068290007204B7 /* RegistrationVM.swift in Sources */,
 				B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */,
 				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
 				B435C1172606543A003A7087 /* JSONCodable.swift in Sources */,
 				B4D869B52606730A007204B7 /* ScannerVM.swift in Sources */,
+				B40C4AB8260684E4005BB10E /* NumberConfirmVC.swift in Sources */,
+				B40C4ABD26068526005BB10E /* NumberConfirmVM.swift in Sources */,
+				B40C4AC226068605005BB10E /* LoadingButton.swift in Sources */,
 				B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */,
+				B4D869BF26068163007204B7 /* IntroVC.swift in Sources */,
+				B4D869C42606825B007204B7 /* RegistrationVC.swift in Sources */,
+				B40C4AC7260686C6005BB10E /* Delay.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
 				B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */,
 				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,

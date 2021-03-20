@@ -28,6 +28,4 @@ final class ConfirmationVC: UIViewController {
         
         //TODO: show data from data model
     }
-    
-    
 }

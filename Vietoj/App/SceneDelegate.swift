@@ -17,14 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard (scene as? UIWindowScene) != nil else { return }
         
-        //TODO: for qr testing
-        UIManager.goToMainScreen()
 //        if UIManager.isLoggedIn {
-//            UIManager.goToMainScreen()
+            UIManager.goToMainScreen()
 //        } else {
 //            UIManager.goToAuth()
 //        }
-        //TODO: for qr testing
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

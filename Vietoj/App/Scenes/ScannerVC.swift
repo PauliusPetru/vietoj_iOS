@@ -14,11 +14,17 @@ final class ScannerVC: UIViewController {
         
         setupCapture()
         scannerVM = ScannerVM()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
+    @objc
+    private func willEnterForeground() {
+        if previewLayer == nil {
+            checkForCamera()
+        }
+        
         if captureSession?.isRunning == false {
             captureSession.startRunning()
         }
@@ -37,6 +43,28 @@ final class ScannerVC: UIViewController {
             //TODO: pass data model ass sender
             self?.performSegue(withIdentifier: "ConfirmationVC", sender: nil)
         })
+    }
+    
+    private func checkForCamera() {
+        AVCaptureDevice.requestAccess(for: .video) { success in
+          if success {
+            DispatchQueue.main.async {
+                self.setupCapture()
+            }
+          } else {
+            let alert = UIAlertController(title: "Camera",
+                                          message: "Camera access is absolutely necessary to use this app",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK",
+                                          style: .default,
+                                          handler: { _ in
+                                            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+            }))
+            DispatchQueue.main.async {
+                self.present(alert, animated: true)
+            }
+          }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

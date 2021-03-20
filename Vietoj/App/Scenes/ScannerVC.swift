@@ -6,10 +6,14 @@ final class ScannerVC: UIViewController {
     private var previewLayer: AVCaptureVideoPreviewLayer!
 
     @IBOutlet private weak var scannerView: UIView!
+    
+    private var scannerVM: ScannerVM?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupCapture()
+        scannerVM = ScannerVM()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -29,9 +33,10 @@ final class ScannerVC: UIViewController {
     }
     
     func onFound(code: String) {
-        //make api call on VM and show confirmation window
-        
-        performSegue(withIdentifier: "ConfirmationVC", sender: nil)
+        scannerVM?.fetchInfo(for: code, completion: { [weak self] in
+            //TODO: pass data model ass sender
+            self?.performSegue(withIdentifier: "ConfirmationVC", sender: nil)
+        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,6 +44,8 @@ final class ScannerVC: UIViewController {
             confirmationVC.onDissmis = { [weak self] in
                 self?.captureSession.startRunning()
             }
+            //TODO: replace placeholders
+//            confirmationVC.dataModel = sender as? DataModel
         }
     }
 }

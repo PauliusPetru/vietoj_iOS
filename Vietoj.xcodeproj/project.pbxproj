@@ -22,6 +22,8 @@
 		B435C1172606543A003A7087 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C1162606543A003A7087 /* JSONCodable.swift */; };
 		B435C12526065AA8003A7087 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C12426065AA8003A7087 /* ScannerVC.swift */; };
 		B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */; };
+		B4D869B52606730A007204B7 /* ScannerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869B42606730A007204B7 /* ScannerVM.swift */; };
+		B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869B92606750D007204B7 /* ConfirmationVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		B435C1162606543A003A7087 /* JSONCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
 		B435C12426065AA8003A7087 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
+		B4D869B42606730A007204B7 /* ScannerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVM.swift; sourceTree = "<group>"; };
+		B4D869B92606750D007204B7 /* ConfirmationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,8 @@
 		B435C12326065A46003A7087 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B4D869B42606730A007204B7 /* ScannerVM.swift */,
+				B4D869B92606750D007204B7 /* ConfirmationVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,8 +406,10 @@
 				B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */,
 				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
 				B435C1172606543A003A7087 /* JSONCodable.swift in Sources */,
+				B4D869B52606730A007204B7 /* ScannerVM.swift in Sources */,
 				B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
+				B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */,
 				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,
 				B435C12526065AA8003A7087 /* ScannerVC.swift in Sources */,
 			);

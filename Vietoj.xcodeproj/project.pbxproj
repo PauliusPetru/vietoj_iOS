@@ -15,6 +15,10 @@
 		B435C0B626063FC1003A7087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B435C0B426063FC1003A7087 /* LaunchScreen.storyboard */; };
 		B435C0C126063FC1003A7087 /* VietojTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0C026063FC1003A7087 /* VietojTests.swift */; };
 		B435C0CC26063FC1003A7087 /* VietojUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0CB26063FC1003A7087 /* VietojUITests.swift */; };
+		B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0E826064A48003A7087 /* KeychainManager.swift */; };
+		B435C0F426064A81003A7087 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0F326064A81003A7087 /* UIManager.swift */; };
+		B435C0FF26065114003A7087 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435C0FD26065114003A7087 /* Alamofire.framework */; };
+		B435C10026065114003A7087 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435C0FE26065114003A7087 /* KeychainAccess.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		B435C0C726063FC1003A7087 /* VietojUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B435C0CB26063FC1003A7087 /* VietojUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietojUITests.swift; sourceTree = "<group>"; };
 		B435C0CD26063FC1003A7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B435C0E826064A48003A7087 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		B435C0F326064A81003A7087 /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		B435C0FD26065114003A7087 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B435C0FE26065114003A7087 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B435C0FF26065114003A7087 /* Alamofire.framework in Frameworks */,
+				B435C10026065114003A7087 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				B435C0BF26063FC1003A7087 /* VietojTests */,
 				B435C0CA26063FC1003A7087 /* VietojUITests */,
 				B435C0A726063FBF003A7087 /* Products */,
+				B435C0FC26065114003A7087 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +151,8 @@
 		B435C0E3260645FD003A7087 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B435C0E826064A48003A7087 /* KeychainManager.swift */,
+				B435C0F326064A81003A7087 /* UIManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -184,6 +197,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B435C0FC26065114003A7087 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0FD26065114003A7087 /* Alamofire.framework */,
+				B435C0FE26065114003A7087 /* KeychainAccess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +217,7 @@
 				B435C0A326063FBF003A7087 /* Frameworks */,
 				B435C0A426063FBF003A7087 /* Resources */,
 				B435C0DC26063FF2003A7087 /* SwiftLint */,
+				B435C0F82606507A003A7087 /* Carthages */,
 			);
 			buildRules = (
 			);
@@ -329,6 +352,26 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		B435C0F82606507A003A7087 /* Carthages */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+			);
+			name = Carthages;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -336,9 +379,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B435C0F426064A81003A7087 /* UIManager.swift in Sources */,
 				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
 				B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
+				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +561,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN7F35V39U;
-				INFOPLIST_FILE = Vietoj/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Vietoj/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +584,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YN7F35V39U;
-				INFOPLIST_FILE = Vietoj/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Vietoj/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

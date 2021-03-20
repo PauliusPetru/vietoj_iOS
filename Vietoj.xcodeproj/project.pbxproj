@@ -99,13 +99,8 @@
 		B435C0A826063FBF003A7087 /* Vietoj */ = {
 			isa = PBXGroup;
 			children = (
-				B435C0A926063FBF003A7087 /* AppDelegate.swift */,
-				B435C0AB26063FBF003A7087 /* SceneDelegate.swift */,
-				B435C0AD26063FBF003A7087 /* ViewController.swift */,
-				B435C0AF26063FBF003A7087 /* Main.storyboard */,
-				B435C0B226063FC1003A7087 /* Assets.xcassets */,
-				B435C0B426063FC1003A7087 /* LaunchScreen.storyboard */,
-				B435C0B726063FC1003A7087 /* Info.plist */,
+				B435C0E626064635003A7087 /* App */,
+				B435C0E72606463F003A7087 /* Resources */,
 			);
 			path = Vietoj;
 			sourceTree = "<group>";
@@ -126,6 +121,67 @@
 				B435C0CD26063FC1003A7087 /* Info.plist */,
 			);
 			path = VietojUITests;
+			sourceTree = "<group>";
+		};
+		B435C0E1260645ED003A7087 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B435C0E2260645F7003A7087 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B435C0E3260645FD003A7087 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B435C0E426064603003A7087 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B435C0E526064609003A7087 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0AD26063FBF003A7087 /* ViewController.swift */,
+				B435C0AF26063FBF003A7087 /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B435C0E626064635003A7087 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0A926063FBF003A7087 /* AppDelegate.swift */,
+				B435C0AB26063FBF003A7087 /* SceneDelegate.swift */,
+				B435C0E1260645ED003A7087 /* API */,
+				B435C0E2260645F7003A7087 /* Models */,
+				B435C0E3260645FD003A7087 /* Helpers */,
+				B435C0E426064603003A7087 /* Utils */,
+				B435C0E526064609003A7087 /* Scenes */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B435C0E72606463F003A7087 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0B226063FC1003A7087 /* Assets.xcassets */,
+				B435C0B426063FC1003A7087 /* LaunchScreen.storyboard */,
+				B435C0B726063FC1003A7087 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

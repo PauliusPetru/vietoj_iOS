@@ -36,6 +36,8 @@ final class UIManager {
     }
     
     class func goToMainScreen() {
+        //cia gal reiktu ne replacint o sukist visus tuos kitus langus i navigation istorija, tada useris gales tiesiog spaust back ir gris atgal.
+        //Nes jei nesukisam i istorija ir nores is naujo registruotis replacins gal nelabai nice.
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "MainVC")
         replaceRootController(with: vc)

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PKT-yO-lDA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PKT-yO-lDA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Vietoj" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vietoj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="29"/>
+            <point key="canvasLocation" x="470" y="-682"/>
+        </scene>
+        <!--ScannerVC-->
+        <scene sceneID="uSq-X9-vrg">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="sTO-HO-3bX" customClass="ScannerVC" customModule="Vietoj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JMV-79-hMh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2y-XI-RXz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="u3Q-cP-dpg">
+                                <rect key="frame" x="30" y="74.5" width="20" height="19"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DSY-X7-fXl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x2y-XI-RXz" secondAttribute="bottom" id="3JC-Qt-6mp"/>
+                            <constraint firstAttribute="trailing" secondItem="x2y-XI-RXz" secondAttribute="trailing" id="3Th-wV-mwA"/>
+                            <constraint firstItem="u3Q-cP-dpg" firstAttribute="leading" secondItem="DSY-X7-fXl" secondAttribute="leading" constant="30" id="QJM-Z8-lcA"/>
+                            <constraint firstItem="u3Q-cP-dpg" firstAttribute="top" secondItem="DSY-X7-fXl" secondAttribute="top" constant="30" id="VkX-Jd-QeR"/>
+                            <constraint firstItem="x2y-XI-RXz" firstAttribute="top" secondItem="JMV-79-hMh" secondAttribute="top" id="i1L-qw-FDR"/>
+                            <constraint firstItem="x2y-XI-RXz" firstAttribute="leading" secondItem="JMV-79-hMh" secondAttribute="leading" id="oNe-M9-Aaw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="J79-QH-cTY"/>
+                    <connections>
+                        <outlet property="scannerView" destination="x2y-XI-RXz" id="zkf-sL-6fe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLY-RM-Fuk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="-29"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p9G-Uz-Vgh">
+            <objects>
+                <viewController id="aKt-F2-xrO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vjb-ts-fQp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3im-L3-VZi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAx-7Y-Z6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="-29"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lmA-oC-RPx">
@@ -40,10 +91,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6M-M0-iGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="29"/>
+            <point key="canvasLocation" x="-330" y="-682"/>
         </scene>
     </scenes>
     <resources>
+        <image name="mappin.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

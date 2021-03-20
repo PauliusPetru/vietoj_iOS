@@ -20,6 +20,8 @@
 		B435C0FF26065114003A7087 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435C0FD26065114003A7087 /* Alamofire.framework */; };
 		B435C10026065114003A7087 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435C0FE26065114003A7087 /* KeychainAccess.framework */; };
 		B435C1172606543A003A7087 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C1162606543A003A7087 /* JSONCodable.swift */; };
+		B435C12526065AA8003A7087 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C12426065AA8003A7087 /* ScannerVC.swift */; };
+		B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		B435C0FD26065114003A7087 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B435C0FE26065114003A7087 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		B435C1162606543A003A7087 /* JSONCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
+		B435C12426065AA8003A7087 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +174,11 @@
 		B435C0E526064609003A7087 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B435C12326065A46003A7087 /* ViewModels */,
 				B435C0AD26063FBF003A7087 /* ViewController.swift */,
 				B435C0AF26063FBF003A7087 /* Main.storyboard */,
+				B435C12426065AA8003A7087 /* ScannerVC.swift */,
+				B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -207,6 +214,13 @@
 				B435C0FE26065114003A7087 /* KeychainAccess.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B435C12326065A46003A7087 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,11 +397,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B435C0F426064A81003A7087 /* UIManager.swift in Sources */,
+				B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */,
 				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
 				B435C1172606543A003A7087 /* JSONCodable.swift in Sources */,
 				B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
 				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,
+				B435C12526065AA8003A7087 /* ScannerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +590,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = organization.Vietoj;
+				PRODUCT_BUNDLE_IDENTIFIER = paulius.Vietoj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -597,7 +613,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = organization.Vietoj;
+				PRODUCT_BUNDLE_IDENTIFIER = paulius.Vietoj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

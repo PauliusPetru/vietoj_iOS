@@ -30,7 +30,16 @@ final class ScannerVC: UIViewController {
     
     func onFound(code: String) {
         //make api call on VM and show confirmation window
-        print("🟢 \(code)")
+        
+        performSegue(withIdentifier: "ConfirmationVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let confirmationVC = (segue.destination as? ConfirmationVC) {
+            confirmationVC.onDissmis = { [weak self] in
+                self?.captureSession.startRunning()
+            }
+        }
     }
 }
 
@@ -44,8 +53,6 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             onFound(code: stringValue)
         }
-
-        dismiss(animated: true)
     }
     
     func setupCapture() {
@@ -84,7 +91,6 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
         previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
         scannerView.layer.addSublayer(previewLayer)
-//        view.layer.addSublayer(previewLayer)
 
         captureSession.startRunning()
     }

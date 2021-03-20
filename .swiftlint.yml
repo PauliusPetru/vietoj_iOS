@@ -12,6 +12,7 @@ disabled_rules:
  - trailing_comma
  - nesting
  - identifier_name
+ - void_return
 
 
 opt_in_rules:

@@ -54,22 +54,27 @@
                     <navigationItem key="navigationItem" id="J79-QH-cTY"/>
                     <connections>
                         <outlet property="scannerView" destination="x2y-XI-RXz" id="zkf-sL-6fe"/>
+                        <segue destination="aKt-F2-xrO" kind="show" identifier="ConfirmationVC" id="v3E-Us-N5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLY-RM-Fuk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1884" y="-29"/>
         </scene>
-        <!--View Controller-->
+        <!--ConfirmationVC-->
         <scene sceneID="p9G-Uz-Vgh">
             <objects>
-                <viewController id="aKt-F2-xrO" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="aKt-F2-xrO" customClass="ConfirmationVC" customModule="Vietoj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vjb-ts-fQp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="3im-L3-VZi"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59031002537733845" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bqo-hg-WDP"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="Vjb-ts-fQp" id="oEt-mN-rvE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAx-7Y-Z6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

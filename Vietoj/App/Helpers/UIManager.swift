@@ -31,8 +31,7 @@ final class UIManager {
     
     class func goToAuth() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //TODO: has to be registration VC identifier
-        let vc = storyboard.instantiateViewController(withIdentifier: "MainVC")
+        let vc = storyboard.instantiateViewController(withIdentifier: "RegistrationVC")
         replaceRootController(with: vc)
     }
     

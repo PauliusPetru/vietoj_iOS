@@ -9,17 +9,17 @@ final class KeychainManager {
     
     private let tokenKey = "tokenKey"
     
-    private let keychain = Keychain(service: "com.paulius.party")
+    private let keychain = Keychain(service: "com.organization.vietoj")
     
     func getToken() -> String? {
         guard let authData = keychain[data: tokenKey] else {
             return nil
         }
-        return try? JSONDecoder().decode(String.self, from: authData)
+        return JSONCodable.decode(fromData: authData)
     }
     
     func set(token: String?) {
-        if let encoded = try? JSONEncoder().encode(token) {
+        if let encoded = JSONCodable.encode(fromObject: token) {
             keychain[data: tokenKey] = encoded
         }
     }

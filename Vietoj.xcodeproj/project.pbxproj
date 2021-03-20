@@ -19,6 +19,7 @@
 		B435C0F426064A81003A7087 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0F326064A81003A7087 /* UIManager.swift */; };
 		B435C0FF26065114003A7087 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435C0FD26065114003A7087 /* Alamofire.framework */; };
 		B435C10026065114003A7087 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B435C0FE26065114003A7087 /* KeychainAccess.framework */; };
+		B435C1172606543A003A7087 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C1162606543A003A7087 /* JSONCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B435C0F326064A81003A7087 /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 		B435C0FD26065114003A7087 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B435C0FE26065114003A7087 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		B435C1162606543A003A7087 /* JSONCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		B435C0E426064603003A7087 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B435C1162606543A003A7087 /* JSONCodable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			files = (
 				B435C0F426064A81003A7087 /* UIManager.swift in Sources */,
 				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
+				B435C1172606543A003A7087 /* JSONCodable.swift in Sources */,
 				B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
 				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,

@@ -7,10 +7,22 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
-
+class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+}
+
+extension UIViewController {
+    func dismissKeyboardOnTap(cancelsTouchesInView: Bool = true) {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = cancelsTouchesInView
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

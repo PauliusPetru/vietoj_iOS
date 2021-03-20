@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0A926063FBF003A7087 /* AppDelegate.swift */; };
+		B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0AB26063FBF003A7087 /* SceneDelegate.swift */; };
+		B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0AD26063FBF003A7087 /* ViewController.swift */; };
+		B435C0B126063FBF003A7087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B435C0AF26063FBF003A7087 /* Main.storyboard */; };
+		B435C0B326063FC1003A7087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B435C0B226063FC1003A7087 /* Assets.xcassets */; };
+		B435C0B626063FC1003A7087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B435C0B426063FC1003A7087 /* LaunchScreen.storyboard */; };
+		B435C0C126063FC1003A7087 /* VietojTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0C026063FC1003A7087 /* VietojTests.swift */; };
+		B435C0CC26063FC1003A7087 /* VietojUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C0CB26063FC1003A7087 /* VietojUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B435C0BD26063FC1003A7087 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B435C09E26063FBF003A7087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B435C0A526063FBF003A7087;
+			remoteInfo = Vietoj;
+		};
+		B435C0C826063FC1003A7087 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B435C09E26063FBF003A7087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B435C0A526063FBF003A7087;
+			remoteInfo = Vietoj;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B435C0A626063FBF003A7087 /* Vietoj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vietoj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B435C0A926063FBF003A7087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B435C0AB26063FBF003A7087 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B435C0AD26063FBF003A7087 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B435C0B026063FBF003A7087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B435C0B226063FC1003A7087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B435C0B526063FC1003A7087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B435C0B726063FC1003A7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B435C0BC26063FC1003A7087 /* VietojTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietojTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B435C0C026063FC1003A7087 /* VietojTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietojTests.swift; sourceTree = "<group>"; };
+		B435C0C226063FC1003A7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B435C0C726063FC1003A7087 /* VietojUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VietojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B435C0CB26063FC1003A7087 /* VietojUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VietojUITests.swift; sourceTree = "<group>"; };
+		B435C0CD26063FC1003A7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B435C0A326063FBF003A7087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B435C0B926063FC1003A7087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B435C0C426063FC1003A7087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B435C09D26063FBF003A7087 = {
+			isa = PBXGroup;
+			children = (
+				B435C0A826063FBF003A7087 /* Vietoj */,
+				B435C0BF26063FC1003A7087 /* VietojTests */,
+				B435C0CA26063FC1003A7087 /* VietojUITests */,
+				B435C0A726063FBF003A7087 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B435C0A726063FBF003A7087 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0A626063FBF003A7087 /* Vietoj.app */,
+				B435C0BC26063FC1003A7087 /* VietojTests.xctest */,
+				B435C0C726063FC1003A7087 /* VietojUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B435C0A826063FBF003A7087 /* Vietoj */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0A926063FBF003A7087 /* AppDelegate.swift */,
+				B435C0AB26063FBF003A7087 /* SceneDelegate.swift */,
+				B435C0AD26063FBF003A7087 /* ViewController.swift */,
+				B435C0AF26063FBF003A7087 /* Main.storyboard */,
+				B435C0B226063FC1003A7087 /* Assets.xcassets */,
+				B435C0B426063FC1003A7087 /* LaunchScreen.storyboard */,
+				B435C0B726063FC1003A7087 /* Info.plist */,
+			);
+			path = Vietoj;
+			sourceTree = "<group>";
+		};
+		B435C0BF26063FC1003A7087 /* VietojTests */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0C026063FC1003A7087 /* VietojTests.swift */,
+				B435C0C226063FC1003A7087 /* Info.plist */,
+			);
+			path = VietojTests;
+			sourceTree = "<group>";
+		};
+		B435C0CA26063FC1003A7087 /* VietojUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B435C0CB26063FC1003A7087 /* VietojUITests.swift */,
+				B435C0CD26063FC1003A7087 /* Info.plist */,
+			);
+			path = VietojUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B435C0A526063FBF003A7087 /* Vietoj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B435C0D026063FC1003A7087 /* Build configuration list for PBXNativeTarget "Vietoj" */;
+			buildPhases = (
+				B435C0A226063FBF003A7087 /* Sources */,
+				B435C0A326063FBF003A7087 /* Frameworks */,
+				B435C0A426063FBF003A7087 /* Resources */,
+				B435C0DC26063FF2003A7087 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vietoj;
+			productName = Vietoj;
+			productReference = B435C0A626063FBF003A7087 /* Vietoj.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B435C0BB26063FC1003A7087 /* VietojTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B435C0D326063FC1003A7087 /* Build configuration list for PBXNativeTarget "VietojTests" */;
+			buildPhases = (
+				B435C0B826063FC1003A7087 /* Sources */,
+				B435C0B926063FC1003A7087 /* Frameworks */,
+				B435C0BA26063FC1003A7087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B435C0BE26063FC1003A7087 /* PBXTargetDependency */,
+			);
+			name = VietojTests;
+			productName = VietojTests;
+			productReference = B435C0BC26063FC1003A7087 /* VietojTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B435C0C626063FC1003A7087 /* VietojUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B435C0D626063FC1003A7087 /* Build configuration list for PBXNativeTarget "VietojUITests" */;
+			buildPhases = (
+				B435C0C326063FC1003A7087 /* Sources */,
+				B435C0C426063FC1003A7087 /* Frameworks */,
+				B435C0C526063FC1003A7087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B435C0C926063FC1003A7087 /* PBXTargetDependency */,
+			);
+			name = VietojUITests;
+			productName = VietojUITests;
+			productReference = B435C0C726063FC1003A7087 /* VietojUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B435C09E26063FBF003A7087 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B435C0A526063FBF003A7087 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					B435C0BB26063FC1003A7087 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = B435C0A526063FBF003A7087;
+					};
+					B435C0C626063FC1003A7087 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = B435C0A526063FBF003A7087;
+					};
+				};
+			};
+			buildConfigurationList = B435C0A126063FBF003A7087 /* Build configuration list for PBXProject "Vietoj" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B435C09D26063FBF003A7087;
+			productRefGroup = B435C0A726063FBF003A7087 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B435C0A526063FBF003A7087 /* Vietoj */,
+				B435C0BB26063FC1003A7087 /* VietojTests */,
+				B435C0C626063FC1003A7087 /* VietojUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B435C0A426063FBF003A7087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435C0B626063FC1003A7087 /* LaunchScreen.storyboard in Resources */,
+				B435C0B326063FC1003A7087 /* Assets.xcassets in Resources */,
+				B435C0B126063FBF003A7087 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B435C0BA26063FC1003A7087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B435C0C526063FC1003A7087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B435C0DC26063FF2003A7087 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B435C0A226063FBF003A7087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
+				B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */,
+				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B435C0B826063FC1003A7087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435C0C126063FC1003A7087 /* VietojTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B435C0C326063FC1003A7087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B435C0CC26063FC1003A7087 /* VietojUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B435C0BE26063FC1003A7087 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B435C0A526063FBF003A7087 /* Vietoj */;
+			targetProxy = B435C0BD26063FC1003A7087 /* PBXContainerItemProxy */;
+		};
+		B435C0C926063FC1003A7087 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B435C0A526063FBF003A7087 /* Vietoj */;
+			targetProxy = B435C0C826063FC1003A7087 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B435C0AF26063FBF003A7087 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B435C0B026063FBF003A7087 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B435C0B426063FC1003A7087 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B435C0B526063FC1003A7087 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B435C0CE26063FC1003A7087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B435C0CF26063FC1003A7087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B435C0D126063FC1003A7087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN7F35V39U;
+				INFOPLIST_FILE = Vietoj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = organization.Vietoj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B435C0D226063FC1003A7087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN7F35V39U;
+				INFOPLIST_FILE = Vietoj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = organization.Vietoj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B435C0D426063FC1003A7087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN7F35V39U;
+				INFOPLIST_FILE = VietojTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = organization.VietojTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vietoj.app/Vietoj";
+			};
+			name = Debug;
+		};
+		B435C0D526063FC1003A7087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN7F35V39U;
+				INFOPLIST_FILE = VietojTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = organization.VietojTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vietoj.app/Vietoj";
+			};
+			name = Release;
+		};
+		B435C0D726063FC1003A7087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN7F35V39U;
+				INFOPLIST_FILE = VietojUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = organization.VietojUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vietoj;
+			};
+			name = Debug;
+		};
+		B435C0D826063FC1003A7087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN7F35V39U;
+				INFOPLIST_FILE = VietojUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = organization.VietojUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vietoj;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B435C0A126063FBF003A7087 /* Build configuration list for PBXProject "Vietoj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B435C0CE26063FC1003A7087 /* Debug */,
+				B435C0CF26063FC1003A7087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B435C0D026063FC1003A7087 /* Build configuration list for PBXNativeTarget "Vietoj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B435C0D126063FC1003A7087 /* Debug */,
+				B435C0D226063FC1003A7087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B435C0D326063FC1003A7087 /* Build configuration list for PBXNativeTarget "VietojTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B435C0D426063FC1003A7087 /* Debug */,
+				B435C0D526063FC1003A7087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B435C0D626063FC1003A7087 /* Build configuration list for PBXNativeTarget "VietojUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B435C0D726063FC1003A7087 /* Debug */,
+				B435C0D826063FC1003A7087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B435C09E26063FBF003A7087 /* Project object */;
+}

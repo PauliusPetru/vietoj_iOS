@@ -36,7 +36,6 @@ final class ConfirmationVC: UIViewController {
         backgroundView.addGestureRecognizer(gestureRecognizer)
         statusStackView.isHidden = true
         
-        
         //TODO: show data from data model
     }
     @IBAction private func submitAction(_ sender: Any) {

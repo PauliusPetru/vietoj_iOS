@@ -34,6 +34,14 @@
 		B4F6C03326073C890092290C /* TextView+Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C03226073C890092290C /* TextView+Urls.swift */; };
 		B4F6C05126073FFC0092290C /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C05026073FFC0092290C /* Localizations.swift */; };
 		B4F6C05D2607433E0092290C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4F6C05F2607433E0092290C /* Localizable.strings */; };
+		B4F6C068260790380092290C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C067260790380092290C /* API.swift */; };
+		B4F6C06D260790FC0092290C /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C06C260790FC0092290C /* ApiError.swift */; };
+		B4F6C072260791A30092290C /* ApiRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C071260791A30092290C /* ApiRequestable.swift */; };
+		B4F6C077260791E00092290C /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C076260791E00092290C /* ApiConstants.swift */; };
+		B4F6C082260798A10092290C /* PlaceRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C081260798A10092290C /* PlaceRequestable.swift */; };
+		B4F6C08726079FE80092290C /* RegistrationRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C08626079FE80092290C /* RegistrationRequestable.swift */; };
+		B4F6C08C2607A14E0092290C /* PhoneConfirmRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C08B2607A14E0092290C /* PhoneConfirmRequestable.swift */; };
+		B4F6C0912607A18F0092290C /* CheckinRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C0902607A18F0092290C /* CheckinRequestable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +96,14 @@
 		B4F6C05026073FFC0092290C /* Localizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
 		B4F6C05E2607433E0092290C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4F6C0632607437B0092290C /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B4F6C067260790380092290C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B4F6C06C260790FC0092290C /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		B4F6C071260791A30092290C /* ApiRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestable.swift; sourceTree = "<group>"; };
+		B4F6C076260791E00092290C /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		B4F6C081260798A10092290C /* PlaceRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRequestable.swift; sourceTree = "<group>"; };
+		B4F6C08626079FE80092290C /* RegistrationRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestable.swift; sourceTree = "<group>"; };
+		B4F6C08B2607A14E0092290C /* PhoneConfirmRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConfirmRequestable.swift; sourceTree = "<group>"; };
+		B4F6C0902607A18F0092290C /* CheckinRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinRequestable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +184,13 @@
 		B435C0E1260645ED003A7087 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B4F6C067260790380092290C /* API.swift */,
+				B4F6C071260791A30092290C /* ApiRequestable.swift */,
+				B4F6C076260791E00092290C /* ApiConstants.swift */,
+				B4F6C081260798A10092290C /* PlaceRequestable.swift */,
+				B4F6C08626079FE80092290C /* RegistrationRequestable.swift */,
+				B4F6C08B2607A14E0092290C /* PhoneConfirmRequestable.swift */,
+				B4F6C0902607A18F0092290C /* CheckinRequestable.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -175,6 +198,7 @@
 		B435C0E2260645F7003A7087 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B4F6C06C260790FC0092290C /* ApiError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -435,21 +459,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F6C077260791E00092290C /* ApiConstants.swift in Sources */,
 				B435C0F426064A81003A7087 /* UIManager.swift in Sources */,
+				B4F6C06D260790FC0092290C /* ApiError.swift in Sources */,
+				B4F6C072260791A30092290C /* ApiRequestable.swift in Sources */,
 				B4D869C926068290007204B7 /* RegistrationVM.swift in Sources */,
 				B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */,
 				B4F6C03326073C890092290C /* TextView+Urls.swift in Sources */,
 				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
 				B435C1172606543A003A7087 /* JSONCodable.swift in Sources */,
+				B4F6C08726079FE80092290C /* RegistrationRequestable.swift in Sources */,
 				B4D869B52606730A007204B7 /* ScannerVM.swift in Sources */,
 				B40C4AB8260684E4005BB10E /* NumberConfirmVC.swift in Sources */,
 				B4F6C05126073FFC0092290C /* Localizations.swift in Sources */,
+				B4F6C08C2607A14E0092290C /* PhoneConfirmRequestable.swift in Sources */,
 				B40C4ABD26068526005BB10E /* NumberConfirmVM.swift in Sources */,
+				B4F6C0912607A18F0092290C /* CheckinRequestable.swift in Sources */,
 				B40C4AC226068605005BB10E /* LoadingButton.swift in Sources */,
 				B435C0AA26063FBF003A7087 /* AppDelegate.swift in Sources */,
 				B4D869BF26068163007204B7 /* IntroVC.swift in Sources */,
 				B4D869C42606825B007204B7 /* RegistrationVC.swift in Sources */,
+				B4F6C068260790380092290C /* API.swift in Sources */,
 				B40C4AC7260686C6005BB10E /* Delay.swift in Sources */,
+				B4F6C082260798A10092290C /* PlaceRequestable.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
 				B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */,
 				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,

@@ -7,8 +7,9 @@
 "intro_screen_title" = "en_Registracija";
 "intro_screen_name_title" = "en_Pilnas vardas";
 "intro_screen_name_placeholder" = "en_Vardas Pavardė";
-"intro_screen_phone_title" = "en_+3706";
-"intro_screen_privacy_description" = "en_Registruodamiesi sutinkate su Vietoj privatumo politika. Jūsų duomenys bus naudojami tik visuomenės sveikatos reikmėms.";
+"intro_screen_phone_title" = "en_Telefono numeris";
+"intro_screen_phone_placeholder" = "+3706";
+"intro_screen_privacy_description" = "en_Registruodamiesi sutinkate su Vietoj en_privatumo politika. Jūsų duomenys bus naudojami tik visuomenės sveikatos reikmėms.";
 "intro_screen_privacy_title" = "en_privatumo politika";
 "intro_screen_submit_button" = "en_Registruotis";
 
@@ -22,7 +23,8 @@
 "scanner_screen_looking_title" = "en_Ieškome Vietoj QR kodo...";
 
 //Mark: Confirmation screen
-"confirmation_success_title" = "en_Registracija pavyko!";
-"confirmation_failed_title" = "en_Registracija nepavyko.";
-"confirmation_success_subTitle" = "en_Ačiū už supratingumą.";
-"confirmation_failed_subTitle" = "en_Klaida mūsų pusėje. Ačiū už bandymą.";
+"confirmation_screen_success_title" = "en_Registracija pavyko!";
+"confirmation_screen_failed_title" = "en_Registracija nepavyko.";
+"confirmation_screen_success_subTitle" = "en_Ačiū už supratingumą.";
+"confirmation_screen_failed_subTitle" = "en_Klaida mūsų pusėje. Ačiū už bandymą.";
+"confirmation_screen_submit_button" = "en_Registruotis";

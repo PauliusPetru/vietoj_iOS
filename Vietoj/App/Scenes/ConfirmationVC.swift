@@ -1,6 +1,6 @@
 import UIKit
 
-final class ConfirmationVC: UIViewController {
+final class ConfirmationVC: ViewController {
     
     @IBOutlet private weak var backgroundView: UIView!
     @IBOutlet private weak var statusStackView: UIStackView!
@@ -14,7 +14,7 @@ final class ConfirmationVC: UIViewController {
     private var confirmationVM: ConfirmationVM?
     
     var onDissmis: (() -> ())?
-//    var dataModel: DataModel?
+    var placeModel: PlaceModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +31,33 @@ final class ConfirmationVC: UIViewController {
     }
     
     private func setupUI() {
+        guard let placeModel = placeModel else {
+            dismiss(animated: false, completion: onDissmis)
+            return
+        }
         let gestureRecognizer = UITapGestureRecognizer(target: self,
                                                        action: #selector (self.dismiss (_:)))
         backgroundView.addGestureRecognizer(gestureRecognizer)
         statusStackView.isHidden = true
+        submitButton.setTitle(__("confirmation_screen_submit_button"), for: .normal)
+        titleLabel.text = placeModel.name
+        adressLabel.text = placeModel.address
         
-        //TODO: show data from data model
     }
+    
     @IBAction private func submitAction(_ sender: Any) {
-        submitButton.isHidden = true
-        statusStackView.isHidden = false
+        guard let placeId = placeModel?.id else {
+            dismiss(animated: true, completion: onDissmis)
+            return
+        }
+        confirmationVM?.checkin(place: placeId) { [weak self] isSuccess, error in
+            self?.submitButton.isHidden = true
+            self?.statusLabel.text = isSuccess ? __("confirmation_screen_success_title") : __("confirmation_screen_failed_title")
+            self?.subStatusLabel.text = isSuccess ? __("confirmation_screen_success_subTitle") : __("confirmation_screen_failed_subTitle")
+            self?.statusStackView.isHidden = false
+            if let error = error {
+                print("🔴 \(error)")
+            }
+        }
     }
 }

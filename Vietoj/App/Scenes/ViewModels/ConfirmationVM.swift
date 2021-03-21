@@ -1,7 +1,7 @@
 import Foundation
 
 final class ConfirmationVM: NSObject {
-    func checkin(place id: String,
+    func checkin(place id: Int,
                  completion: @escaping ((_ isSucces: Bool, ApiError?) -> ())) {
         let request = CheckinRequestable(place: id,
                                          and: KeychainManager.shared.getName() ?? "")

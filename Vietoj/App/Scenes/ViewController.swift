@@ -9,8 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func showAllert(title: String, message: String, handler: (() -> ())? = nil) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK",
+                                      style: .default,
+                                      handler: { _ in handler?() }))
+        present(alert, animated: true)
     }
 }
 

@@ -1,6 +1,6 @@
 import UIKit
 
-final class NumberConfirmVC: UIViewController {
+final class NumberConfirmVC: ViewController {
     
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var numberTitleLabel: UILabel!
@@ -12,6 +12,8 @@ final class NumberConfirmVC: UIViewController {
     private var fieldPossibleAutofillReplacementAt: Date?
     private var fieldPossibleAutofillReplacementRange: NSRange?
     
+    var registrationId: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,19 @@ final class NumberConfirmVC: UIViewController {
     }
     
     @IBAction private func submitAction(_ sender: Any) {
-        UIManager.goToMainScreen()
+        guard let code = codeTextField.text, let registrationId = registrationId else {
+            showAllert(title: "Check field", message: "Check code text")
+            return
+        }
+        
+        numberConfirmVM?.confirm(code, registrationId: registrationId) { [weak self] model, error in
+            if let phoneConfirmModel = model {
+                KeychainManager.shared.set(token: phoneConfirmModel.token)
+                UIManager.goToMainScreen()
+            } else {
+                self?.showAllert(title: "Something wrong", message: error?.error ?? "")
+            }
+        }
     }
     
     private func setupUI() {

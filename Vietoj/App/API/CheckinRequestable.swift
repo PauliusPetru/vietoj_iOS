@@ -7,8 +7,8 @@ struct CheckinRequestable: ApiRequestable {
     var shouldAddAuthHeader = true
     var params: Parameters?
 
-    init(place id: String, and name: String) {
-        params = ["pid": id,
+    init(place id: Int, and name: String) {
+        params = ["pid": "\(id)",
                   "name": name]
     }
 }

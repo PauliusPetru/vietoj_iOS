@@ -1,7 +1,7 @@
 import AVFoundation
 import UIKit
 
-final class ScannerVC: UIViewController {
+final class ScannerVC: ViewController {
     private var captureSession: AVCaptureSession!
     private var previewLayer: AVCaptureVideoPreviewLayer!
 
@@ -38,10 +38,16 @@ final class ScannerVC: UIViewController {
         }
     }
     
-    func onFound(code: String) {
-        scannerVM?.fetchInfo(for: code, completion: { [weak self] in
-            //TODO: pass data model ass sender
-            self?.performSegue(withIdentifier: "ConfirmationVC", sender: nil)
+    func onFound(url: String) {
+        let code = (url as NSString).lastPathComponent
+        scannerVM?.fetchInfo(for: code, completion: { [weak self] model, error in
+            if let placeModel = model {
+                self?.performSegue(withIdentifier: "ConfirmationVC", sender: placeModel)
+            } else {
+                self?.showAllert(title: "Something wrong", message: error?.error ?? "", handler: { [weak self] in
+                    self?.willEnterForeground()
+                })
+            }
         })
     }
     
@@ -72,8 +78,7 @@ final class ScannerVC: UIViewController {
             confirmationVC.onDissmis = { [weak self] in
                 self?.captureSession.startRunning()
             }
-            //TODO: replace placeholders
-//            confirmationVC.dataModel = sender as? DataModel
+            confirmationVC.placeModel = sender as? PlaceModel
         }
     }
 }
@@ -86,7 +91,7 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            onFound(code: stringValue)
+            onFound(url: stringValue)
         }
     }
     

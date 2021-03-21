@@ -17,7 +17,7 @@ struct ApiConstants {
         struct Auth {
             static let aa = "sdsad"
             static let registration = "checkin/user/register"
-            static let phoneConfirm = "checkin/user"
+            static let phoneConfirm = "checkin/user/"
         }
         
         static let chechin = "checkin/"

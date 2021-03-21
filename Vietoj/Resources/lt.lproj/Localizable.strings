@@ -7,7 +7,8 @@
 "intro_screen_title" = "Registracija";
 "intro_screen_name_title" = "Pilnas vardas";
 "intro_screen_name_placeholder" = "Vardas Pavardė";
-"intro_screen_phone_title" = "+3706";
+"intro_screen_phone_title" = "Telefono numeris";
+"intro_screen_phone_placeholder" = "+3706";
 "intro_screen_privacy_description" = "Registruodamiesi sutinkate su Vietoj privatumo politika. Jūsų duomenys bus naudojami tik visuomenės sveikatos reikmėms.";
 "intro_screen_privacy_title" = "privatumo politika";
 "intro_screen_submit_button" = "Registruotis";

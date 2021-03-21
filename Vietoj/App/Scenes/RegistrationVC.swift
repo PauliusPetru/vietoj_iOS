@@ -1,6 +1,6 @@
 import UIKit
 
-final class RegistrationVC: UIViewController {
+final class RegistrationVC: ViewController {
     
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var nameTitleLabel: UILabel!
@@ -33,7 +33,21 @@ final class RegistrationVC: UIViewController {
     }
     
     @IBAction private func submitAction(_ sender: Any) {
-        performSegue(withIdentifier: "NumberConfirmVC", sender: nil)
+        guard let name = nameTextField.text,
+              !name.isEmpty,
+              let phone = phoneTextField.text,
+              !phone.isEmpty else {
+            showAllert(title: "Check fields", message: "Check name and phone")
+            return
+        }
+        
+        registrationVM?.submitRegistration(with: name, and: phone) { [weak self] model, error in
+            if let registrationModel = model {
+                self?.performSegue(withIdentifier: "NumberConfirmVC", sender: registrationModel.id)
+            } else {
+                self?.showAllert(title: "Something wrong", message: error?.error ?? "")
+            }
+        }
     }
     
     private func setupUI() {
@@ -41,11 +55,17 @@ final class RegistrationVC: UIViewController {
         nameTitleLabel.text = __("intro_screen_name_title")
         nameTextField.placeholder = __("intro_screen_name_placeholder")
         phoneLabelTitle.text = __("intro_screen_phone_title")
-        phoneTextField.placeholder = __("intro_screen_privacy_description")
+        phoneTextField.placeholder = __("intro_screen_phone_placeholder")
         privacyTextField.addHyperLinksToText(originalText: __("intro_screen_privacy_description"),
                                              hyperLinks: [__("intro_screen_privacy_title"): "privacy_url"])
         submitButton.setTitle(__("intro_screen_submit_button"),
                               for: .normal)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let numberConfirmVC = (segue.destination as? NumberConfirmVC) {
+            numberConfirmVC.registrationId = sender as? Int
+        }
     }
 }
 

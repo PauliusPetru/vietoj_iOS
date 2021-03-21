@@ -27,7 +27,6 @@
 		B435C12526065AA8003A7087 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B435C12426065AA8003A7087 /* ScannerVC.swift */; };
 		B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */; };
 		B4D869B52606730A007204B7 /* ScannerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869B42606730A007204B7 /* ScannerVM.swift */; };
-		B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869B92606750D007204B7 /* ConfirmationVM.swift */; };
 		B4D869BF26068163007204B7 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869BE26068163007204B7 /* IntroVC.swift */; };
 		B4D869C42606825B007204B7 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869C32606825B007204B7 /* RegistrationVC.swift */; };
 		B4D869C926068290007204B7 /* RegistrationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D869C826068290007204B7 /* RegistrationVM.swift */; };
@@ -45,6 +44,7 @@
 		B4F6C0962607A3970092290C /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C0952607A3960092290C /* PlaceModel.swift */; };
 		B4F6C09B2607A3FD0092290C /* RegistrationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C09A2607A3FD0092290C /* RegistrationSuccessModel.swift */; };
 		B4F6C0A02607A4470092290C /* PhoneConfirmSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C09F2607A4470092290C /* PhoneConfirmSuccessModel.swift */; };
+		B4F6C0A82607A9810092290C /* ConfirmationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C0A72607A9810092290C /* ConfirmationVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +91,6 @@
 		B435C12426065AA8003A7087 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		B4D869AF26066AE8007204B7 /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
 		B4D869B42606730A007204B7 /* ScannerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVM.swift; sourceTree = "<group>"; };
-		B4D869B92606750D007204B7 /* ConfirmationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVM.swift; sourceTree = "<group>"; };
 		B4D869BE26068163007204B7 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		B4D869C32606825B007204B7 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		B4D869C826068290007204B7 /* RegistrationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVM.swift; sourceTree = "<group>"; };
@@ -110,6 +109,7 @@
 		B4F6C0952607A3960092290C /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		B4F6C09A2607A3FD0092290C /* RegistrationSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessModel.swift; sourceTree = "<group>"; };
 		B4F6C09F2607A4470092290C /* PhoneConfirmSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConfirmSuccessModel.swift; sourceTree = "<group>"; };
+		B4F6C0A72607A9810092290C /* ConfirmationVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,8 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				B4D869B42606730A007204B7 /* ScannerVM.swift */,
-				B4D869B92606750D007204B7 /* ConfirmationVM.swift */,
 				B40C4ABC26068526005BB10E /* NumberConfirmVM.swift */,
+				B4F6C0A72607A9810092290C /* ConfirmationVM.swift */,
 				B4D869C826068290007204B7 /* RegistrationVM.swift */,
 			);
 			path = ViewModels;
@@ -493,9 +493,9 @@
 				B40C4AC7260686C6005BB10E /* Delay.swift in Sources */,
 				B4F6C082260798A10092290C /* PlaceRequestable.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
-				B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */,
 				B4F6C0962607A3970092290C /* PlaceModel.swift in Sources */,
 				B4F6C0A02607A4470092290C /* PhoneConfirmSuccessModel.swift in Sources */,
+				B4F6C0A82607A9810092290C /* ConfirmationVM.swift in Sources */,
 				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,
 				B435C12526065AA8003A7087 /* ScannerVC.swift in Sources */,
 			);

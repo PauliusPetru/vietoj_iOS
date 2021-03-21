@@ -26,6 +26,7 @@ final class UIManager {
     
     class func logout() {
         KeychainManager.shared.set(token: nil)
+        KeychainManager.shared.set(name: nil)
         goToAuth()
     }
     

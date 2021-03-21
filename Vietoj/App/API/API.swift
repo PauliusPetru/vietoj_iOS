@@ -23,6 +23,7 @@ struct API {
                 if responseData.response?.statusCode == ApiConstants.ResponseStatusCode.unauthorized {
                     UIManager.goToAuth()
                 } else {
+                    //show some error here for now
                     completionHandler(.error(errorToUse))
                 }
             }

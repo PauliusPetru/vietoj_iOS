@@ -7,7 +7,7 @@ struct PlaceRequestable: ApiRequestable {
     var shouldAddAuthHeader = false
     var params: Parameters?
 
-    init(code: String) {
+    init(for code: String) {
         path = ApiConstants.Url.place + "/\(code)"
     }
 }

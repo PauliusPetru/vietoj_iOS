@@ -42,6 +42,9 @@
 		B4F6C08726079FE80092290C /* RegistrationRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C08626079FE80092290C /* RegistrationRequestable.swift */; };
 		B4F6C08C2607A14E0092290C /* PhoneConfirmRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C08B2607A14E0092290C /* PhoneConfirmRequestable.swift */; };
 		B4F6C0912607A18F0092290C /* CheckinRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C0902607A18F0092290C /* CheckinRequestable.swift */; };
+		B4F6C0962607A3970092290C /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C0952607A3960092290C /* PlaceModel.swift */; };
+		B4F6C09B2607A3FD0092290C /* RegistrationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C09A2607A3FD0092290C /* RegistrationSuccessModel.swift */; };
+		B4F6C0A02607A4470092290C /* PhoneConfirmSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F6C09F2607A4470092290C /* PhoneConfirmSuccessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,9 @@
 		B4F6C08626079FE80092290C /* RegistrationRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestable.swift; sourceTree = "<group>"; };
 		B4F6C08B2607A14E0092290C /* PhoneConfirmRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConfirmRequestable.swift; sourceTree = "<group>"; };
 		B4F6C0902607A18F0092290C /* CheckinRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinRequestable.swift; sourceTree = "<group>"; };
+		B4F6C0952607A3960092290C /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		B4F6C09A2607A3FD0092290C /* RegistrationSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessModel.swift; sourceTree = "<group>"; };
+		B4F6C09F2607A4470092290C /* PhoneConfirmSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConfirmSuccessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +205,9 @@
 			isa = PBXGroup;
 			children = (
 				B4F6C06C260790FC0092290C /* ApiError.swift */,
+				B4F6C0952607A3960092290C /* PlaceModel.swift */,
+				B4F6C09A2607A3FD0092290C /* RegistrationSuccessModel.swift */,
+				B4F6C09F2607A4470092290C /* PhoneConfirmSuccessModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -464,6 +473,7 @@
 				B4F6C06D260790FC0092290C /* ApiError.swift in Sources */,
 				B4F6C072260791A30092290C /* ApiRequestable.swift in Sources */,
 				B4D869C926068290007204B7 /* RegistrationVM.swift in Sources */,
+				B4F6C09B2607A3FD0092290C /* RegistrationSuccessModel.swift in Sources */,
 				B4D869B026066AE8007204B7 /* ConfirmationVC.swift in Sources */,
 				B4F6C03326073C890092290C /* TextView+Urls.swift in Sources */,
 				B435C0AE26063FBF003A7087 /* ViewController.swift in Sources */,
@@ -484,6 +494,8 @@
 				B4F6C082260798A10092290C /* PlaceRequestable.swift in Sources */,
 				B435C0AC26063FBF003A7087 /* SceneDelegate.swift in Sources */,
 				B4D869BA2606750D007204B7 /* ConfirmationVM.swift in Sources */,
+				B4F6C0962607A3970092290C /* PlaceModel.swift in Sources */,
+				B4F6C0A02607A4470092290C /* PhoneConfirmSuccessModel.swift in Sources */,
 				B435C0E926064A48003A7087 /* KeychainManager.swift in Sources */,
 				B435C12526065AA8003A7087 /* ScannerVC.swift in Sources */,
 			);

@@ -1,0 +1,28 @@
+// MARK: Intro screen
+"intro_screen_title" = "Vietoj";
+"intro_screen_description" = "Greitai pasižymėkite vietose, kuriose lankotės, ir būkite informuoti apie savo COVID riziką.";
+"intro_screen_submit_button" = "Registruotis";
+
+// MARK: Registration screen
+"intro_screen_title" = "Registracija";
+"intro_screen_name_title" = "Pilnas vardas";
+"intro_screen_name_placeholder" = "Vardas Pavardė";
+"intro_screen_phone_title" = "+3706";
+"intro_screen_privacy_description" = "Registruodamiesi sutinkate su Vietoj privatumo politika. Jūsų duomenys bus naudojami tik visuomenės sveikatos reikmėms.";
+"intro_screen_privacy_title" = "privatumo politika";
+"intro_screen_submit_button" = "Registruotis";
+
+// MARK: Phone number screen
+"phone_screen_title" = "Telefono nr. patvirtinimas";
+"phone_screen_phone_title" = "Patvirtinimo kodas";
+"phone_screen_phone_placeholder" = "000 000";
+"phone_screen_submit_button" = "Patvirtinti";
+
+//Mark: Scanner screen
+"scanner_screen_looking_title" = "Ieškome Vietoj QR kodo...";
+
+//Mark: Confirmation screen
+"confirmation_success_title" = "Registracija pavyko!";
+"confirmation_failed_title" = "Registracija nepavyko.";
+"confirmation_success_subTitle" = "Ačiū už supratingumą.";
+"confirmation_failed_subTitle" = "Klaida mūsų pusėje. Ačiū už bandymą.";

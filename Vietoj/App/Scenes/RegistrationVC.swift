@@ -19,13 +19,9 @@ final class RegistrationVC: UIViewController {
         super.viewDidLoad()
         dismissKeyboardOnTap()
         registrationVM = RegistrationVM()
-        
+        setupUI()
         nameTextField.delegate = self
         phoneTextField.delegate = self
-    }
-    
-    @IBAction private func submitAction(_ sender: Any) {
-        performSegue(withIdentifier: "NumberConfirmVC", sender: nil)
     }
     
     func gotoNextField(from field: UITextField) {
@@ -34,6 +30,22 @@ final class RegistrationVC: UIViewController {
         } else {
             field.resignFirstResponder()
         }
+    }
+    
+    @IBAction private func submitAction(_ sender: Any) {
+        performSegue(withIdentifier: "NumberConfirmVC", sender: nil)
+    }
+    
+    private func setupUI() {
+        titleLabel.text = __("intro_screen_title")
+        nameTitleLabel.text = __("intro_screen_name_title")
+        nameTextField.placeholder = __("intro_screen_name_placeholder")
+        phoneLabelTitle.text = __("intro_screen_phone_title")
+        phoneTextField.placeholder = __("intro_screen_privacy_description")
+        privacyTextField.addHyperLinksToText(originalText: __("intro_screen_privacy_description"),
+                                             hyperLinks: [__("intro_screen_privacy_title"): "privacy_url"])
+        submitButton.setTitle(__("intro_screen_submit_button"),
+                              for: .normal)
     }
 }
 

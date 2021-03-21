@@ -2,7 +2,7 @@ import UIKit
 
 final class ConfirmationVC: UIViewController {
     
-    @IBOutlet private var backgroundView: UIView!
+    @IBOutlet private weak var backgroundView: UIView!
     @IBOutlet private weak var statusStackView: UIStackView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var adressLabel: UILabel!
@@ -21,6 +21,8 @@ final class ConfirmationVC: UIViewController {
         
         confirmationVM = ConfirmationVM()
         setupUI()
+        
+        submitButton.setTitle(__("confirmation_screen_submit_button"), for: .normal)
     }
     
     @objc

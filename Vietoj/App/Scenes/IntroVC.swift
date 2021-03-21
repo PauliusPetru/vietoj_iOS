@@ -9,10 +9,16 @@ final class IntroVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //setupUI
+        setupUI()
     }
     
     @IBAction private func registerButtonAction(_ sender: Any) {
         performSegue(withIdentifier: "RegistrationVC", sender: nil)
+    }
+    
+    private func setupUI() {
+        titleLabel.text = __("intro_screen_title")
+        descriptionLabel.text = __("intro_screen_description")
+        registerButton.setTitle(__("intro_screen_submit_button"), for: .normal)
     }
 }
